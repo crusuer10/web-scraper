@@ -7,7 +7,8 @@ curl -s \
       -H 'accept: application/json, text/plain, */*' \
       -H 'content-type: application/json' \
       -H 'accept-language: en-US,en;q=0.9,de;q=0.8,fr;q=0.7' \
-      "$1" | grep -oP '\b(?:href|src|action|name|email|poster|data-src)="\K[^"]*' | jq -R -C -s 'split("\n") | map(select(length > 0))'
+      "$1" | grep -oP '\b(?:href|src|action|name|email|poster|data-src)="\K[^"]*' | 
+      jq -R -C -s 'split("\n") | map(select(length > 0))' > data.json
 
 
 
