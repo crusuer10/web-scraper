@@ -1,4 +1,4 @@
 # web-scraper 
 
-A  lightweight Shell-based web scraper for scraping 
+A  lightweight curl-based web scraper for scraping 
 html attributes such as hyperlinks etc.
